@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>About Me - Ida Ridesjö</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container-fluid px-0">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg fixed-top py-3">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">ida ridesjö</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container px-3">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link me-lg-3" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-lg-3 active" href="about_me.html">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-lg-3" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-lg-3" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- About me - sektion -->
+            <section class="about pt-6">
+                <div class="container">
+                    <div class="row align-items-center column-gap-5">
+                        <!-- Bild på mig -->
+                        <div class="col-md-5">
+                            <img src="images/ida_image.jpg" class="img-me img-fluid" alt="Image of me">
+                        </div>
+
+                        <!-- Textsektion -->
+                        <div class="col-md-6 about-text">
+                            <h1 class="fw-light display-3 pb-3">hi, i'm ida</h1>
+                            <p>
+                                Growing up I spent much of my time using my imagination for writing stories, crafting, painting, and making stuff that brings me joy and inspires my creativity. 
+                                Being a curious individual that loves to explore new things has led me to engage in a lot of different
+                                <span class="hover-container">
+                                    <span class="hover-text position-relative">hobbies
+                                        <img src="images/hobbies.jpg" alt="" class="img-fluid hidden-image position-absolute">
+                                    </span>
+                                </span> 
+                                over the years. I've let my imagination and curious mind shape me as a designer and guide me throughout my design process.
+                            </p>
+                            <p>
+                                When I'm not busy expanding my design skills at Kristianstad University, you'll probably find me filling up my apartment with crafts, or reading a book in the sofa & cuddling with my fluffy little creatures of joy
+                                <a href="#" class="shake text-decoration-none">
+                                    <img src="/images/cat.png" class="img-cat img-fluid" alt="cat emoji">
+                                </a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container text-center">
+                    <h2 class="footer-title">
+                        Let's bring your vision to life
+                    </h2>
+                    <a href="#" class="footer-link">GET IN TOUCH <i class="bi bi-arrow-right-short"></i></a>
+                    <p class="footer-contact mt-5">
+                        Drop me a line <a href="mailto:idaridesjo@gmail.com" class="footer-link">idaridesjo@gmail.com</a>
+                    </p>
+                    <p class="footer-social">
+                        Follow me on 
+                        <a href="#" class="footer-link">Behance</a>, 
+                        <a href="#" class="footer-link">LinkedIn</a>, 
+                        <a href="https://www.instagram.com/idaridesjo/" class="footer-link">Instagram</a>
+                    </p>
+                </div>
+                
+                <!-- tillbaka till toppen-knapp -->
+                <button onclick="scrollToTop()" id="backToTopBtn">
+                    <i class="bi bi-arrow-up-circle"></i>
+                </button>
+            </footer>
+        </div>
+    </body>
+
+    <!-- JS -->
+    <script src="/js/scripts.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

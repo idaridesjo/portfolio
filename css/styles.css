@@ -1,0 +1,418 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FDF5F0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Noto Serif", serif;
+    color: #192A4E;
+}
+
+p {
+    color: #333333;
+}
+
+.material-icons-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+}
+
+.navbar-brand > .material-icons-outlined {
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: #FDF5F0;
+}
+
+/* navbar för index - transparent */
+#mainNavbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* Färg efter hero-sektionen */
+#mainNavbar.scrolled {
+    background-color: #FDF5F0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: "Homemade Apple", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #192A4E;
+}
+
+.navbar-nav .nav-link {
+    color: #6c757d; /* Färg när sidan är inaktiv */
+    font-weight: 500;
+    text-decoration: none; /* Ta bort standard-understrykning */
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #192A4E; /* Färg vid hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #192A4E; /* Färg för aktiv sida */
+}
+
+/* Understrykning för aktiv sida */
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #192A4E;
+}
+
+
+/* HOME */
+.hero {
+    height: 90vh;
+    background: url("/images/header_v4.png") no-repeat center center/cover;
+}
+
+.intro-section {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+hr.solid {
+    border-top: 1px solid #192A4E;
+}
+
+.exclamation-mark {
+    bottom: -9.2rem;
+    right: 22rem;
+    font-family: "Homemade Apple", serif;
+    font-size: 5rem;
+    color: #BC5D58;
+}
+  
+.small-detail {
+    bottom: -1.3rem;
+    left: 15.2rem;
+    font-family: "Homemade Apple", serif;
+    font-size: 1rem;
+    color: #BC5D58;
+}
+
+.shake {
+    transform: translate(-50%, -50%);
+}
+  
+/* För katt-emojin */
+.shake:hover img{
+    animation: shake 0.5s linear 2;
+}
+
+@keyframes shake {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Projektgalleri - Startsida */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.project-hover:hover {
+    transform: translateY(-5px);
+}
+  
+.project-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-hover:hover img {
+    transform: scale(1.01);
+}
+
+.project-info h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+/* ABOUT ME */
+.about {
+    padding: 50px 0;
+}
+
+.img-me {
+    border-radius: 10px;
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-text {
+    cursor: pointer; /* Muspekare som signifier att texten är interaktiv */
+    position: relative;
+    font-family: "Homemade Apple", serif;
+    color: #BC5D58;
+}
+
+.hidden-image {
+    position: absolute;
+    bottom: 100%; /* Flyttar bilden ovanför siffran */
+    transform: translateX(-50%); /* Justerar så att bilden är exakt i mitten */
+    opacity: 0; /* Bilden är dold initialt */
+    visibility: hidden; /* Gör att bilden inte tar upp utrymme när den är dold */
+    z-index: 10; /* Säkerställer att bilden hamnar över texten */
+}
+
+.img-cat {
+    width: 30px;
+}
+
+.hover-text:hover .hidden-image {
+    opacity: 1; /* Visar bilden */
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    max-width: 250px;
+}
+
+
+/* PROJECTS */
+.hero-section {
+    background-color: #b6bfc4;
+    padding: 5rem 0;
+}
+
+.hero-section .img-fluid {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    background-color: #d9d9d9;
+}
+
+.project-video {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+}
+
+.darker-section {
+    background-color: #b6bfc4;
+    padding: 5rem 0;
+}
+
+.content-container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.blockquote {
+    font-size: 1.1em;
+    width: 100%;
+    font-style: italic;
+    color: #333333;
+    border-left: 5px solid #192A4E;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Thumbnail till video (projektsida) */
+.video-thumbnail-02 {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-thumbnail-02 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Beåller proportioner */
+}
+
+/* Thumbnail till video (projektsida) */
+.video-thumbnail-01 {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-thumbnail-01 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Play-knapp till videon */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid #192A4E;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transition: transform 0.3s ease, border-left-color 0.3s ease;
+}
+
+/* Hover-effekt för play */
+.video-thumbnail:hover .play-btn {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-left-color: #2c4068; /* Ändrar färg vid hover */
+}
+
+
+/* Kontaktformulär */
+form {
+    max-width: 600px;
+}
+
+.form-label {
+    color: #192A4E;
+    font-family: "Noto Serif", serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-control {
+    border: 1.5px solid #192A4E;
+    border-radius: 0;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+textarea {
+    resize: none;
+}
+
+#feedback {
+    display: none;
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #192A4E;
+}
+
+.btn-submit {
+    background-color: #192A4E;
+    color: #FDF5F0;
+    border: 1.5px solid #192A4E;
+    padding: 8px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color .2s ease;
+}
+  
+.btn-submit:hover {
+    background-color: #2c4068;
+    color: #FDF5F0;
+    border: 1.5px solid #2c4068;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #192A4E;
+    padding: 2rem 0;
+    margin-top: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-title {
+    font-style: italic;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-subtitle {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.footer-contact, .footer-social {
+    color: #d1d8e0;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.footer-link {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #BC5D58;
+    text-decoration: underline;
+}
+
+.footer-arrow {
+    margin-top: 20px;
+}
+
+.footer-up-icon {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.footer-up-icon:hover {
+    transform: scale(1.2);
+    color: #BC5D58;
+}
+
+/* Tillbaka till toppen-knapp */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Göm knapp (satt i js att knappen visas när användaren scrollat 300px nedåt) */
+    z-index: 1000; /* Visas ovanpå andra element */
+    color: #8DAABC;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#backToTopBtn:hover {
+    color: #BC5D58;
+    background-color: transparent;
+    transition: color 0.4s ease;
+}
