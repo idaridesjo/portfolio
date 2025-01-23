@@ -153,13 +153,25 @@ hr.solid {
 .hidden-image {
     position: absolute;
     bottom: 100%; /* Flyttar bilden ovanför texten */
-    transform: translateX(-50%); /* Justerar så att bilden är i mitten */
+    left: auto;
+    transform: translateX(-50%); /* Justerar bilden till mitten */
     opacity: 0; /* Bilden är dold initialt */
     visibility: hidden; /* Gör att bilden inte tar upp utrymme när den är dold */
     z-index: 10; /* Säkerställer att bilden hamnar över texten */
+    max-width: 300px;
+    max-height: 250px; /* Bestämmer maxhöjd så att bilden inte blir för stor */
 }
 
-.hover-text:hover .hidden-image {
+@media (max-width: 576px) { /* För mindre skärmar */
+    .hidden-image {
+        left: 0; /* Ta bort centrering */
+        right: 0;
+        transform: translateX(0); /* Så att bilden inte flyttar sig utanför ramen */
+    }
+}
+
+.hover-text:hover .hidden-image,
+.hover-text.active .hidden-image {
     opacity: 1; /* Visar bilden */
     visibility: visible;
     max-width: 250px;
@@ -339,19 +351,26 @@ textarea {
 /* Tillbaka till toppen-knapp */
 #backToTopBtn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 5%;
+    right: 1.5%;
     display: none; /* Göm knapp (satt i js att knappen visas när användaren scrollat 300px nedåt) */
     z-index: 1000; /* Visas ovanpå andra element */
-    color: #668ca4;
+    color: #BC5D58;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Responsiv för mindre skärmar */
+@media (max-width: 576px) {
+    #backToTopBtn {
+        color: #BC5D58;
+    }
 }
 
 #backToTopBtn:hover {
-    color: #BC5D58;
+    color: #668ca4;
     background-color: transparent;
     transition: color 0.4s ease;
 }
