@@ -45,7 +45,25 @@ function playVideo02(element) {
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allow', 'autoplay; encrypted-media');
     iframe.setAttribute('allowfullscreen', 'true');
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    element.parentNode.replaceChild(iframe, element);
+    iframe.classList.add('w-100', 'h-100'); // Gör iframen responsiv
+    element.replaceWith(iframe); // Byt ut div:en mot iframe
 }
+
+// Gör texten klickbar på mobil
+document.querySelectorAll('.hover-text').forEach(element => {
+    element.addEventListener('click', function () {
+        // Växla klassen 'active' för att visa/dölja bilden
+        this.classList.toggle('active');
+    });
+});
+
+// Samma funktion som ovan fast med katt-emojin
+document.querySelectorAll('.img-cat').forEach(cat => {
+    cat.addEventListener('click', function () {
+        this.classList.add('active');
+        // Ta bort klassen efter animationen är klar
+        setTimeout(() => {
+            this.classList.remove('active');
+        }, 500); // 500ms matchar animationens längd
+    });
+});

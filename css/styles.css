@@ -100,9 +100,9 @@ hr.solid {
   
 .small-detail {
     bottom: -1.3rem;
-    left: 15.2rem;
+    left: 17rem;
     font-family: "Homemade Apple", serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #BC5D58;
 }
 
@@ -152,8 +152,8 @@ hr.solid {
 
 .hidden-image {
     position: absolute;
-    bottom: 100%; /* Flyttar bilden ovanför siffran */
-    transform: translateX(-50%); /* Justerar så att bilden är exakt i mitten */
+    bottom: 100%; /* Flyttar bilden ovanför texten */
+    transform: translateX(-50%); /* Justerar så att bilden är i mitten */
     opacity: 0; /* Bilden är dold initialt */
     visibility: hidden; /* Gör att bilden inte tar upp utrymme när den är dold */
     z-index: 10; /* Säkerställer att bilden hamnar över texten */
@@ -162,8 +162,8 @@ hr.solid {
 .hover-text:hover .hidden-image {
     opacity: 1; /* Visar bilden */
     visibility: visible;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
     max-width: 250px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .img-cat {
@@ -175,8 +175,9 @@ hr.solid {
 }
   
 /* För katt-emojin */
-.shake:hover img{
-    animation: shake 0.5s linear 2;
+.shake:hover img, .img-cat.active {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1;
 }
 
 @keyframes shake {
@@ -246,10 +247,6 @@ hr.solid {
 
 /* Play-knapp till videon */
 .play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 0;
     height: 0;
     border-left: 40px solid #192A4E;
