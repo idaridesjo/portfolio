@@ -24,10 +24,6 @@ p {
     font-size: 40px;
 }
 
-.navbar {
-    background-color: #FDF5F0;
-}
-
 /* navbar för index - transparent */
 #mainNavbar {
     background-color: transparent;
