@@ -15,6 +15,10 @@ p {
     color: #333333;
 }
 
+.navbar {
+    background-color: #FDF5F0;
+}
+
 .material-icons-outlined {
     vertical-align: middle;
     line-height: 1px;
