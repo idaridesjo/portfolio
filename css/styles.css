@@ -192,8 +192,8 @@ hr.solid {
 }
 
 
-/* HÄR BÖRJAR CSS FÖR PROJECTS-SIDAN */
-.hero-section {
+/* HÄR BÖRJAR CSS FÖR PROJECTS-SIDORNA */
+.hero-section, .dark-bg {
     background-color: #b6bfc4;
 }
 
@@ -203,11 +203,7 @@ hr.solid {
 }
 
 .project-video {
-    max-height: 450px;
-}
-
-.dark-bg {
-    background-color: #b6bfc4;
+    max-width: 450px;
 }
 
 .blockquote {
@@ -319,11 +315,6 @@ textarea {
     color: #ffffff;
 }
 
-.footer-subtitle {
-    color: #ffffff;
-    font-size: 1rem;
-}
-
 .footer-contact, .footer-social {
     color: #d1d8e0;
 }
@@ -337,17 +328,6 @@ textarea {
 .footer-link:hover {
     color: #BC5D58;
     text-decoration: underline;
-}
-
-.footer-up-icon {
-    font-size: 1.5rem;
-    color: #ffffff;
-    transition: transform 0.3s ease;
-}
-
-.footer-up-icon:hover {
-    transform: scale(1.2);
-    color: #BC5D58;
 }
 
 /* Tillbaka till toppen-knapp */
