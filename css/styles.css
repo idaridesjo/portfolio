@@ -71,7 +71,7 @@ p {
 }
 
 
-/* HOME */
+/* HÄR BÖRJAR CSS FÖR HOME-SIDAN */
 .hero {
     height: 90vh;
     background: url("../images/hero.png") no-repeat center center/cover;
@@ -102,7 +102,7 @@ hr.solid {
     color: #BC5D58;
 }
 
-/* Projektgalleri - Startsida */
+/* Fotogalleri (projekt) */
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -129,8 +129,7 @@ hr.solid {
 }
 
 
-/* ABOUT ME - sida */
-
+/* HÄR BÖRJAR CSS FÖR ABOUT ME-SIDAN */
 .img-me {
     border-radius: 40px;
 }
@@ -189,7 +188,7 @@ hr.solid {
 }
 
 
-/* PROJECTS */
+/* HÄR BÖRJAR CSS FÖR PROJECTS-SIDAN */
 .hero-section {
     background-color: #b6bfc4;
 }
@@ -203,7 +202,7 @@ hr.solid {
     max-height: 450px;
 }
 
-.darker-section {
+.dark-bg {
     background-color: #b6bfc4;
 }
 
@@ -257,7 +256,7 @@ hr.solid {
 }
 
 
-/* Kontaktformulär */
+/* HÄR BÖRJAR CSS FÖR CONTACT-SIDAN */
 form {
     max-width: 600px;
 }
