@@ -204,6 +204,11 @@ hr.solid {
     background-color: #d9d9d9;
 }
 
+.content-container {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
 .project-video {
     width: 100%;
     height: auto;
