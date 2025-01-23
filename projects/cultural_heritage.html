@@ -14,10 +14,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
 
     <body>
@@ -25,7 +25,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg fixed-top py-3">
                 <div class="container">
-                    <a class="navbar-brand" href="/index.html">ida ridesjö</a>
+                    <a class="navbar-brand" href="../index.html">ida ridesjö</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,16 +33,16 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link me-lg-3" href="/index.html">Home</a>
+                                    <a class="nav-link me-lg-3" href="../index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link me-lg-3" href="/about_me.html">About Me</a>
+                                    <a class="nav-link me-lg-3" href="../about_me.html">About Me</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link me-lg-3" href="/portfolio.html">Portfolio</a>
+                                    <a class="nav-link me-lg-3" href="../portfolio.html">Portfolio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link me-lg-3" href="/contact.html">Contact</a>
+                                    <a class="nav-link me-lg-3" href="../contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -56,7 +56,7 @@
                     <h1 class="display-6 fw-bold">Cultural heritage for future generations</h1>
                     <p class="lead">Design team-project for preserving cultural heritage while making it more accessible to a wider audience of swedish tourists.</p>
                     <div class="mx-auto my-4">
-                        <img src="/images/cultural_heritage_hero.png" class="img-fluid rounded" alt="">
+                        <img src="../images/cultural_heritage_hero.png" class="img-fluid rounded" alt="">
                     </div>
                 </div>
             </section>
@@ -87,7 +87,7 @@
                             <p>This project, "Cultural Heritage for Future Generations," aimed to address this challenge by leveraging augmented reality (AR) to create engaging, interactive, and memorable experiences for tourists. This initiative focused on making heritage sites more appealing and accessible while fostering a deeper connection to its history.</p>
                         </div>
                         <div class="col-lg-5">
-                            <img src="/images/runsten.JPG" class="img-fluid w-75 mx-auto d-block" alt="">
+                            <img src="../images/runsten.JPG" class="img-fluid w-75 mx-auto d-block" alt="">
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                     <h2 class="fw-bold mb-4">User Research</h2>
                     <div class="row">
                         <p>Going into this project we needed to develop an understanding about the barriers and opportunities for engaging swedish tourists with cultural heritage.</p>
-                        <img src="/images/findings.jpg" class="img-fluid mx-auto d-block mb-4" alt="">
+                        <img src="../images/findings.jpg" class="img-fluid mx-auto d-block mb-4" alt="">
                         <p>We sent out surveys to people of various ages. In total we collected 33 responses, predominantly aged 25-34, which revealed key barriers such as:</p>
                         <div class="col-lg-8">
                             <ul>
@@ -138,7 +138,7 @@
                         <li><em>HMW make cultural heritage more accessible, to experience it both on-site and remotely?</em></li>
                         <li><em>HMW create an immersive experience that appeals to younger, as well as older tourists?</em></li>
                     </ul>
-                    <img src="/images/sketches.png" class="img-fluid mb-4" alt="ideation sketches">
+                    <img src="../images/sketches.png" class="img-fluid mb-4" alt="ideation sketches">
                     <p>We also did some research into existing Viking Age AR-experiences in Sweden: <a href="https://apps.apple.com/se/app/visir-uplandia/id1246398950" class="text-black-50">Visir Uplandia</a>, <a href="https://apps.apple.com/se/app/augmented-history-gamla-uppsala/id1146628327?l=en" class="text-black-50">Augmented History: Gamla Uppsala</a>, and <a href="https://apps.apple.com/se/app/uppsala-konst-och-kulturarv/id1606405075" class="text-black-50">Uppsala konst och kulturarv.</a></p>
                 </div>
             </section>
@@ -150,10 +150,10 @@
                     <p>We created sketched out different scenarios of the experience, to easier visualize the flow on-site vs remotly.</p>
                     <div class="row">
                         <div class="col-lg-6 mb-4">
-                            <img src="/images/scenario_2.jpg" class="img-fluid" alt="">
+                            <img src="../images/scenario_2.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="col-lg-6">
-                            <img src="/images/scenario_1.jpg" class="img-fluid" alt="">
+                            <img src="../images/scenario_1.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -176,11 +176,13 @@
                     </figure>
 
                     <div class="row mb-2">
-                        <img src="/images/quiz_exploratory.jpg" class="img-fluid" alt="">
+                        <img src="../images/quiz_exploratory.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="row">
                         <div class="col-lg-7">
-                            <video src="/images/ar_exploratory.mp4" class="project-video w-100" type="video/mp4" alt="" controls muted loop></video>    
+                            <video type="video/mp4" class="project-video w-100" alt="Exploratory prototype test with users" controls loop muted>
+                                <source src="../ar-frame.mp4">
+                            </video>
                         </div>
                         <div class="col-lg-5">
                             <iframe width="250" height="450" src="https://www.youtube.com/embed/_v3iC8BzSko?si=0LCQjapl42KO_ms1" title="YouTube video player" frameborder="0" allow="autoplay; gyroscope; web-share" allowfullscreen></iframe>
@@ -205,7 +207,7 @@
                         <iframe width="250" height="450" src="https://www.youtube.com/embed/Kte2Ug0cNxs?si=DVBkWj1M-ghSTcIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div class="row">
-                        <img src="/images/prototype_2.png" class="img-fluid mb-4" alt="">
+                        <img src="../images/prototype_2.png" class="img-fluid mb-4" alt="">
                         <p>The prototypes above are two of the iterated digital prototypes we made, one that focus on functionality, as well as some interactivity. To test the user flow of completing an interactive story-part. 
                         The second prototype explores look-and-feel, and focus more on appearence with a higher level of fidelity.</p>
                     </div>
@@ -219,7 +221,7 @@
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="/images/screen-01.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of interactive map">
+                            <img src="../images/screen-01.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of interactive map">
                         </div>
                         <div class="col-lg-6 align-self-center">
                             <p>Interactive a map with pinpoints to find avaliable cultural heritage experiences.</p>
@@ -231,13 +233,13 @@
                             <p>Users can explore sites to find and colltect hidden items through an AR-treasure hunt.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img src="/images/screen-03.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of treasure hunt in AR-view">
+                            <img src="../images/screen-03.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of treasure hunt in AR-view">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="/images/screen-05.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of 'Sigurdsristningen' story">
+                            <img src="../images/screen-05.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of 'Sigurdsristningen' story">
                         </div>
                         <div class="col-lg-6 align-self-center">
                             <p>Audio-narrated stories with Viking Age-related themes that users can choose from.</p>
@@ -249,13 +251,13 @@
                             <p>Information delivered through various formats (text, audio, and visuals), enhancing accessibility and inclusivity.</p>
                         </div>
                         <div class="col-lg-6">
-                            <img src="/images/screen-06.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of 'The story of Sigurd Fafnesbane'">
+                            <img src="../images/screen-06.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of 'The story of Sigurd Fafnesbane'">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="/images/screen-07.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of story complete and reward">
+                            <img src="../images/screen-07.png" class="img-fluid w-50 mx-auto d-block" alt="Mobile screen of story complete and reward">
                         </div>
                         <div class="col-lg-6 align-self-center">
                             <p>Users earn points, collectable items and level up by exploring and completing Viking heritage stories.</p>
@@ -269,7 +271,7 @@
                 <div class="content-container px-2">
                     <h2 class="fw-bold mb-4">Final prototype</h2>
                     <div class="ratio ratio-16x9 video-thumbnail-02" data-video-id="VIDEO_ID" onclick="playVideo02(this)">
-                        <img src="/images/mockup_1.png" alt="YouTube thumbnail">
+                        <img src="../images/mockup_1.png" alt="YouTube thumbnail">
                         <div class="play-btn"></div>
                     </div>
                 </div>
@@ -281,7 +283,7 @@
                     <h2 class="footer-title">
                         Let's bring your vision to life
                     </h2>
-                    <a href="#" class="footer-link">GET IN TOUCH <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="/contact.html" class="footer-link">GET IN TOUCH <i class="bi bi-arrow-right-short"></i></a>
                     <p class="footer-contact mt-5">
                         Drop me a line <a href="mailto:idaridesjo@gmail.com" class="footer-link">idaridesjo@gmail.com</a>
                     </p>
@@ -302,8 +304,8 @@
     </body>
 
     <!-- Bootstrap JS -->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="/js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
 </html>
