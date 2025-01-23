@@ -129,10 +129,7 @@ hr.solid {
 }
 
 
-/* ABOUT ME */
-.about {
-    padding: 50px 0;
-}
+/* ABOUT ME - sida */
 
 .img-me {
     border-radius: 40px;
@@ -195,30 +192,19 @@ hr.solid {
 /* PROJECTS */
 .hero-section {
     background-color: #b6bfc4;
-    padding: 5rem 0;
 }
 
 .hero-section .img-fluid {
-    width: 100%;
     max-width: 800px;
-    height: auto;
     background-color: #d9d9d9;
 }
 
 .project-video {
-    width: 100%;
-    height: auto;
     max-height: 450px;
 }
 
 .darker-section {
     background-color: #b6bfc4;
-    padding: 5rem 0;
-}
-
-.content-container {
-    max-width: 970px;
-    margin: 0 auto;
 }
 
 .blockquote {
@@ -323,29 +309,20 @@ textarea {
 /* FOOTER */
 .footer {
     background-color: #192A4E;
-    padding: 2rem 0;
-    margin-top: 40px;
-    text-align: center;
     color: #ffffff;
 }
 
 .footer-title {
-    font-style: italic;
-    font-weight: 400;
     color: #ffffff;
-    margin-bottom: 15px;
 }
 
 .footer-subtitle {
     color: #ffffff;
     font-size: 1rem;
-    margin-bottom: 25px;
 }
 
 .footer-contact, .footer-social {
     color: #d1d8e0;
-    font-size: 0.9rem;
-    margin: 5px 0;
 }
 
 .footer-link {
@@ -357,10 +334,6 @@ textarea {
 .footer-link:hover {
     color: #BC5D58;
     text-decoration: underline;
-}
-
-.footer-arrow {
-    margin-top: 20px;
 }
 
 .footer-up-icon {
