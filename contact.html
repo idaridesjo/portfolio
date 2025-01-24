@@ -55,24 +55,31 @@
             <div class="container mt-5 pb-4">
                 <h1 class="text-center">Get in touch</h1>
                 <p class="text-center lead pb-4">Start with saying <em>"Hi"</em> and tell me about your idea!</p>
+                <!-- Kontaktformulär -->
                 <form class="mx-auto" id="contact-form">
+                    <!-- Namn-inputfält -->
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
                     </div>
+                    <!-- Email-inputfält -->
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
                     </div>
+                    <!-- Ämnes-inputfält -->
                     <div class="mb-3">
                         <label for="subject" class="form-label">Subject</label>
                         <input type="text" class="form-control" id="subject" name="subject" placeholder="What do you need help with?" required>
                     </div>
+                    <!-- Meddelande-textfält -->
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" name="message" rows="4" placeholder="Share some details about your project" required></textarea>
                     </div>
+                    <!-- Skicka-knapp -->
                     <div class="d-flex justify-content-end align-items-center">
+                        <!-- Feedback meddelande -->
                         <span id="feedback" class="me-3">I'll be in touch!</span>
                         <button type="submit" class="btn btn-submit">Submit</button>
                     </div>

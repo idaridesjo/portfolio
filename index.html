@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Home - Ida Ridesjö</title>
+        <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
         <!-- Fonts -->
@@ -22,17 +23,22 @@
     </head>
 
     <body>
+        <!-- Container-fluid = Bootstrap-behållare med full-width utan padding på sidorna -->
         <div class="container-fluid px-0">
             <!-- Navbar -->
-            <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top py-3">
+            <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top py-3"> <!-- Navbar är fast på toppen av sidan -->
+                <!-- Container = Bootstrap-behållare med fixed-width och padding -->
                 <div class="container">
+                    <!-- Logotyp -->
                     <a class="navbar-brand" href="index.html"> ida ridesjö
                     </a>
+                    <!-- Hamburgermeny som visas på små skärmar -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="container px-3">
                         <div class="collapse navbar-collapse" id="navbarNav">
+                            <!-- Länkar till webbsidor -->
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
                                     <a class="nav-link me-lg-3 active" href="index.html">Home</a>
@@ -74,12 +80,13 @@
                 <div class="container">
                     <h2 class="text-center pb-1 fs-3">Selected Projects</h2>
                     <hr class="solid pb-4">
-                    
+                    <!-- Skapar en rad (horisontell) med kolumner -->
                     <div class="row g-4">
                         <!-- Projekt 1 -->
                         <div class="col-12 col-md-6"> <!-- col-md-6 = två kolumner för skärmstorlekar >768px, col-12 = en kolumn på skärmar <768px -->
                             <div class="project-card project-hover">
                                 <a href="projects/cultural_heritage.html" class="card-link text-decoration-none">
+                                    <!-- Responsiv bild -->
                                     <img src="images/cultural_heritage_hero.png" alt="Cultural Heritage design project" class="img-fluid rounded shadow-sm"/>
                                 </a>
                                 <div class="project-info mt-3 text-start">
@@ -103,7 +110,7 @@
                         <!-- Projekt 3 -->
                         <div class="col-12 col-md-6">
                             <div class="project-card">
-                                <img src="images/inter_astra.jpg" alt="" class="img-fluid rounded shadow-sm"/>
+                                <img src="images/inter_astra.jpg" alt="Inter Astra project" class="img-fluid rounded shadow-sm"/>
                                 <div class="project-info mt-3 text-start">
                                     <h5 class="text-dark mb-1">Inter Astra</h5>
                                     <p class="text-secondary small mb-0">Prototyping AR-minigames for mobile devices to promote health.</p>
@@ -113,7 +120,7 @@
                         <!-- Projekt 4 -->
                         <div class="col-12 col-md-6">
                             <div class="project-card">
-                                <img src="images/interactive_video_walk_2.png" alt="" class="img-fluid rounded shadow-sm"/>
+                                <img src="images/interactive_video_walk_2.png" alt="Mockup of interactive video prototype" class="img-fluid rounded shadow-sm"/>
                                 <div class="project-info mt-3 text-start">
                                     <h5 class="text-dark mb-1">Interactive video walk</h5>
                                     <p class="text-secondary small mb-0">Designing an interactive video walk-prototype to emphasize preservation of Torshälla's cultural heritage.</p>
@@ -126,16 +133,16 @@
                                 <img src="images/honcha.png" alt="" class="img-fluid rounded shadow-sm"/>
                                 <div class="project-info mt-3 text-start">
                                     <h5 class="text-dark mb-1">Honcha</h5>
-                                    <p class="text-secondary small mb-0">Branding and packaging design for tea company.</p>
+                                    <p class="text-secondary small mb-0">Branding and packaging design for Honcha - tea company.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Projekt 6 -->
                         <div class="col-12 col-md-6">
                             <div class="project-card">
-                                <img src="images/podcast-redesign.png" alt="" class="img-fluid rounded shadow-sm"/>
+                                <img src="images/podcast-redesign.png" alt="Mockup of Apple Podcast application" class="img-fluid rounded shadow-sm"/>
                                 <div class="project-info mt-3 text-start">
-                                    <h5 class="text-dark mb-1">Apple Podcast</h5>
+                                    <h5 class="text-dark mb-1">Apple Podcast redesign</h5>
                                     <p class="text-secondary small mb-0">How can we make the process of finding and organizing podcasts more intuitive for users?</p>
                                 </div>
                             </div>

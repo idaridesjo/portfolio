@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.getElementById("mainNavbar");
-
+    // Visar eller döljer bakgrunden till nav utifrån position (efter hero-bild)
     window.addEventListener("scroll", function () {
       if (window.scrollY > 450) {
         navbar.classList.add("scrolled");
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Hämta knapp
+// Hämta tillbaka till toppen-knapp
 const backToTopBtn = document.getElementById("backToTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -36,29 +36,29 @@ function scrollToTop() {
     });
 }
 
-// Kontaktformulär
+// Hantering av att skicka kontaktformulär
 document.querySelector('form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    document.getElementById('feedback').style.display = "inline"; // Visa feedback
+    event.preventDefault(); // // Förhindrar att formuläret skickas
+    document.getElementById('feedback').style.display = "inline"; // Visa feedback-meddelande
     this.reset(); // Töm formulär
 });
 
-// Slutlig prototyp video
+// Projektsida - Spela upp prototyp-video när användare klickar på thumbnail-bild
 function playVideo02(element) {
-    const videoId = element.getAttribute('data-video-id');
+    const videoId = element.getAttribute('Cvg_F-E-sFM');
     const iframe = document.createElement('iframe');
     iframe.setAttribute('src', `https://www.youtube.com/embed/Cvg_F-E-sFM?si=92UPk2Dr-8kaUi5Z`);
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allow', 'autoplay; encrypted-media');
     iframe.setAttribute('allowfullscreen', 'true');
-    iframe.classList.add('w-100', 'h-100'); // Gör iframen responsiv
-    element.replaceWith(iframe); // Byt ut div:en mot iframe
+    iframe.classList.add('w-100', 'h-100'); // Gör iframe responsiv
+    element.replaceWith(iframe); // Byter ut video-thumbnail div mot iframe
 }
 
-// Gör texten klickbar på mobil
+// About me - Gör texten 'hobbies' klickbar på mobil
 document.querySelectorAll('.hover-text').forEach(element => {
     element.addEventListener('click', function () {
-        // Växla klassen 'active' för att visa/dölja bilden
+        // Byter till 'active' för att visa/dölja bilden
         this.classList.toggle('active');
     });
 });

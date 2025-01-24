@@ -33,13 +33,13 @@ p {
     color: #192A4E;
 }
 
-/* navbar för index - transparent */
+/* Transparent navbar (i början av startsidan) */
 #mainNavbar {
     background-color: transparent;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth övergång för bakgrundsfärg */
 }
 
-/* Färg efter hero-sektionen */
+/* Bakgrundsfärg ändras när användaren scrollar förbi hero-sektionen */
 #mainNavbar.scrolled {
     background-color: #FDF5F0;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -53,20 +53,20 @@ p {
 }
 
 .navbar-nav .nav-link {
-    color: #6c757d; /* Färg när sidan är inaktiv */
+    color: #6c757d; /* Färg när sida ej är aktiv */
     font-weight: 500;
-    text-decoration: none; /* Ta bort standard-understrykning */
+    text-decoration: none; /* Ta bort understrykning */
     position: relative;
     transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar .navbar-brand {
-    color: #192A4E; /* Färg vid hover */
+    color: #192A4E; /* Blå färg vid hover */
 }
 
 .navbar-nav .nav-link.active {
-    color: #192A4E; /* Färg för aktiv sida */
+    color: #192A4E; /* Färg när sida är aktiv */
 }
 
 /* Understrykning för aktiv sida */
@@ -84,12 +84,12 @@ p {
 /* HÄR BÖRJAR CSS FÖR HOME-SIDAN */
 .hero {
     height: 90vh;
-    background: url("../images/hero.png") no-repeat center center/cover;
+    background: url("../images/hero.png") no-repeat center center/cover; /* Bakgrundsbild för hero-sektionen */
 }
 
 .intro-section {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centrera innehåll */
 }
 
 hr.solid {
@@ -103,8 +103,9 @@ hr.solid {
     font-size: 5rem;
     color: #BC5D58;
 }
-  
-.small-detail {
+
+/* Accent-text på intro-sektion */
+.small-detail { 
     bottom: -1.3rem;
     left: 17rem;
     font-family: "Homemade Apple", serif;
@@ -112,15 +113,15 @@ hr.solid {
     color: #BC5D58;
 }
 
-/* Fotogalleri (projekt) */
+/* Bildgalleri (startsida) */
 .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+/* Hover-effekt för klickbara cards */
 .project-hover:hover {
     transform: translateY(-5px);
 }
-  
+
 .project-card img {
     object-fit: cover;
     width: 100%;
@@ -130,7 +131,7 @@ hr.solid {
 }
 
 .project-hover:hover img {
-    transform: scale(1.01);
+    transform: scale(1.01); /* Zoomar bilden vid hover */
 }
 
 .project-info h5 {
@@ -160,15 +161,15 @@ hr.solid {
     position: absolute;
     bottom: 100%; /* Flyttar bilden ovanför texten */
     left: auto;
-    transform: translateX(-50%); /* Justerar bilden till mitten */
-    opacity: 0; /* Bilden är dold initialt */
-    visibility: hidden; /* Gör att bilden inte tar upp utrymme när den är dold */
-    z-index: 10; /* Säkerställer att bilden hamnar över texten */
+    transform: translateX(-50%);
+    opacity: 0; /* Gör att bilden är dold från nbörjan */
+    visibility: hidden; /* Bilden tar inte upp utrymme när den är dold */
+    z-index: 10; /* Säkerställer att bilden hamnar ovanför texten */
     max-width: 300px;
-    max-height: 250px; /* Bestämmer maxhöjd så att bilden inte blir för stor */
+    max-height: 250px;
 }
-
-@media (max-width: 576px) { /* För mindre skärmar */
+/* Jusering för mindre skärmar */
+@media (max-width: 576px) {
     .hidden-image {
         left: 0; /* Ta bort centrering */
         right: 0;
@@ -191,7 +192,7 @@ hr.solid {
     transform: translate(-50%, -50%);
 }
   
-/* För katt-emojin */
+/* Animation för katt-emojin */
 .shake:hover img {
     animation: shake 0.5s ease-in-out;
     animation-iteration-count: 1;
@@ -247,9 +248,9 @@ hr.solid {
 .video-thumbnail-02 {
     position: relative;
     cursor: pointer;
-    display: block;
+    display: block; /* Visa som ett blockelement */
     max-width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* Döljer innehåll som överskrider gränsen för elementet */
     border-radius: 8px;
 }
 
@@ -259,20 +260,21 @@ hr.solid {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Beåller proportioner */
+    object-fit: cover; /* Skalar upp bilden så att den täcker behållaren */
 }
 
-/* Play-knapp till videon */
+/* Play-knappen till videon */
 .play-btn {
     width: 0;
     height: 0;
+    /* Skapar triangelform */
     border-left: 40px solid #192A4E;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     transition: transform 0.3s ease, border-left-color 0.3s ease;
 }
 
-/* Hover-effekt för play */
+/* Hover-effekt för play-knapp */
 .video-thumbnail-02:hover .play-btn {
     transform: translate(-50%, -50%) scale(1.2);
     border-left-color: #2c4068; /* Ändrar färg vid hover */
@@ -300,7 +302,7 @@ form {
 }
 
 textarea {
-    resize: none;
+    resize: none; /* Inaktivera möjlighet att ändra storlek på meddelande-ruta */
 }
 
 #feedback {
@@ -331,11 +333,11 @@ textarea {
 /* FOOTER */
 .footer {
     background-color: #192A4E;
-    color: #ffffff;
+    color: #f1f1f1;
 }
 
 .footer-title {
-    color: #ffffff;
+    color: #f1f1f1;
 }
 
 .footer-contact, .footer-social {
@@ -358,7 +360,7 @@ textarea {
     position: fixed;
     bottom: 4%;
     right: 1%;
-    display: none; /* Initialt dold, visas med JS när användaren scrollat 300px nedåt */
+    display: none; /* Dold från början, visas med JS när användaren scrollat 300px nedåt */
     z-index: 1000; /* Visas ovanpå andra element */
     color: #BC5D58;
     background-color: transparent;
