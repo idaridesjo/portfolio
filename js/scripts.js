@@ -1,23 +1,3 @@
-// Hämta knapp
-const backToTopBtn = document.getElementById("backToTopBtn");
-
-window.addEventListener("scroll", () => {
-    // Visa knapp när användare skrollat förbi hero-sektionen (300px)
-    if (window.scrollY > 300) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
-});
-
-// Skrolla tillbaka till toppen
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.getElementById("mainNavbar");
 
@@ -29,6 +9,32 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
+
+// Hämta knapp
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+window.addEventListener("scroll", () => {
+    // Kontrollera om skärmen är bredare än 768px
+    if (window.innerWidth > 768) {
+        // Visa knapp när användare skrollat förbi hero-sektionen (300px)
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    } else {
+        // Dölj knappen på mindre skärmar
+        backToTopBtn.style.display = "none";
+    }
+});
+
+// Skrolla tillbaka till toppen (smooth)
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
 
 // Kontaktformulär
 document.querySelector('form').addEventListener('submit', function(event) {
@@ -54,16 +60,5 @@ document.querySelectorAll('.hover-text').forEach(element => {
     element.addEventListener('click', function () {
         // Växla klassen 'active' för att visa/dölja bilden
         this.classList.toggle('active');
-    });
-});
-
-// Samma funktion som ovan fast med katt-emojin
-document.querySelectorAll('.img-cat').forEach(cat => {
-    cat.addEventListener('click', function () {
-        this.classList.add('active');
-        // Ta bort klassen efter animationen är klar
-        setTimeout(() => {
-            this.classList.remove('active');
-        }, 500); // 500ms matchar animationens längd
     });
 });

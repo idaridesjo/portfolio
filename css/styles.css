@@ -26,6 +26,11 @@ p {
 
 .navbar-brand > .material-icons-outlined {
     font-size: 40px;
+    color: #192A4E;
+}
+
+.navbar-toggler {
+    color: #192A4E;
 }
 
 /* navbar för index - transparent */
@@ -55,7 +60,8 @@ p {
     transition: color 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover,
+.navbar .navbar-brand {
     color: #192A4E; /* Färg vid hover */
 }
 
@@ -170,8 +176,7 @@ hr.solid {
     }
 }
 
-.hover-text:hover .hidden-image,
-.hover-text.active .hidden-image {
+.hover-text:hover .hidden-image {
     opacity: 1; /* Visar bilden */
     visibility: visible;
     max-width: 250px;
@@ -187,7 +192,7 @@ hr.solid {
 }
   
 /* För katt-emojin */
-.shake:hover img, .img-cat.active {
+.shake:hover img {
     animation: shake 0.5s ease-in-out;
     animation-iteration-count: 1;
 }
@@ -351,9 +356,9 @@ textarea {
 /* Tillbaka till toppen-knapp */
 #backToTopBtn {
     position: fixed;
-    bottom: 5%;
-    right: 1.5%;
-    display: none; /* Göm knapp (satt i js att knappen visas när användaren scrollat 300px nedåt) */
+    bottom: 4%;
+    right: 1%;
+    display: none; /* Initialt dold, visas med JS när användaren scrollat 300px nedåt */
     z-index: 1000; /* Visas ovanpå andra element */
     color: #BC5D58;
     background-color: transparent;
@@ -362,15 +367,15 @@ textarea {
     font-size: 2.5rem;
 }
 
-/* Responsiv för mindre skärmar */
-@media (max-width: 576px) {
-    #backToTopBtn {
-        color: #BC5D58;
-    }
-}
-
 #backToTopBtn:hover {
     color: #668ca4;
     background-color: transparent;
     transition: color 0.4s ease;
+}
+
+/* Dölj knappen på mobila enheter */
+@media (max-width: 768px) {
+    #backToTopBtn {
+        display: none !important;
+    }
 }
