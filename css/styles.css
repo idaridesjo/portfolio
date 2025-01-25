@@ -180,7 +180,7 @@ hr.solid {
 .hover-text:hover .hidden-image {
     opacity: 1; /* Visar bilden */
     visibility: visible;
-    max-width: 250px;
+    max-width: 500px;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
