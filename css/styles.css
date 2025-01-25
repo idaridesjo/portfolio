@@ -166,7 +166,7 @@ hr.solid {
     visibility: hidden; /* Bilden tar inte upp utrymme när den är dold */
     z-index: 10; /* Säkerställer att bilden hamnar ovanför texten */
     max-width: 300px;
-    max-height: 250px;
+    max-height: 300px;
 }
 /* Jusering för mindre skärmar */
 @media (max-width: 576px) {
